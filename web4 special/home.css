@@ -1,0 +1,1055 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.bar{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+}
+.bar .logo{
+    margin-top: 8px;
+    display: flex;
+    margin-left: 60px;
+}
+.bar .logo img{
+    width: 100px;
+    border-radius: 50%;
+    animation: za 8s linear infinite;
+}
+@keyframes za {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+  }
+.bar .logo img:hover{
+    padding: 5px;
+    box-sizing: border-box;
+}
+.bar .logo h1{
+    margin-left: 20px;
+    font-size: 90px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+}
+.bar .logo span{
+    color: orangered;
+    position: relative;
+    cursor: pointer;
+}
+.bar .logo span::after{
+    content: '';
+    height: 5px;
+    width: 0;
+    background: skyblue;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+}
+.bar .logo:hover span::after{
+    width: 100%;
+}
+.bar .logo h1::after{
+    content: '';
+    height: 5px;
+    width: 0;
+    background: orangered;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+.bar .logo h1:hover::after{
+    width: 100%;
+}
+.bar .logo h1:hover{
+    color: skyblue;
+}
+.bar .menu{
+    margin-right: 40px;
+}
+.bar .menu ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 25px;
+    position: relative;
+}
+.bar .menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border-bottom: 2px solid darkgray;
+    text-transform: uppercase;
+}
+.bar .menu ul li a:hover{
+    color: orangered;
+    border-bottom: 2px solid blue;
+}
+.bar .menu ul li::after{
+    content: '';
+    height: 5px;
+    width: 0;
+    background: skyblue;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.4s;
+}
+.bar .menu ul li:hover::after{
+    width: 100%;
+}
+.body{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    height: 750px;
+    z-index: -1;
+    background-color: rgb(235, 233, 233);
+}
+.body .text{
+    width: 49%;
+    margin-top: 180px;
+    text-align: center;
+    z-index: 2;
+}
+.body .text span{
+    color: orangered;
+}
+.body .text h1{
+    padding: 10px;
+    font-size:45px;
+}
+.body .text p{
+    line-height: 30px;
+}
+.body .img{
+    width: 49%;
+}
+.body .img img{
+    margin-top: 10px;
+    width: 100%;
+    cursor: pointer;
+    animation: pizza 3s infinite;
+}
+@keyframes pizza{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(50px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.bttn button{
+    z-index: 3;
+    width: 150px;
+    padding: 8px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 10px;
+    border: 2px solid orangered;
+    cursor: pointer;
+    position: relative;
+    transition: 0.4s;
+    background: transparent;
+}
+.bttn button h3{
+    font-weight: bold;
+    z-index: 3;
+}
+.bttn span{
+    background: orangered;
+    height: 100%;
+    width: 0%;
+    border-radius: 8px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -2;
+    transition: 0.4s;
+}
+.bttn button:hover span{
+    width: 100%; 
+}
+.bttn button:hover h3{
+    color: white;
+    z-index: 3;
+}
+.thank{
+    margin-top: 180px;
+}
+.thank h1{
+    margin-left: 135px;
+    width: 603px;
+    border-bottom: 7px solid orangered;
+}
+.thank:hover span{
+    color: skyblue;
+}
+.detial{
+    width: 100%;
+    height: 150px;
+}
+.detial h2{
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    color: rgba(0, 0, 0, 0.726);
+}
+.detial h1{
+    font-size: 30px;
+    color: black;
+    text-align: center;
+}
+.detial h1 span{
+    color: orangered;
+}
+.container{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container .img{
+    width: 50%;
+    position: relative;
+}
+.container .img img{
+    width: 100%;
+    object-fit: cover;
+}
+.container .img .booking{
+    position: absolute;
+    top: 75%;
+    left: 30%;
+    background-color: white;
+    padding: 8px 15px;
+}
+.container .img .booking h1{
+    text-align: center;
+}
+.container .text {
+    width: 50%;
+    padding: 10px 40px;
+    box-sizing: border-box;
+}
+.container .text h1{
+    text-align: center;
+    font-size: 35px;
+    padding: 15px 10px;
+}
+.container .text h2{
+    font-size: 23px;
+}
+.container .text h3 {
+    padding-top: 10px;
+    text-align: center;
+}
+.container .text span{
+    color: orangered;
+}
+.container .text span:hover{
+    color: skyblue;
+}
+.container .vdo{
+    width: 100%;
+    height:700px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+.container .vdo iframe{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    background-color: rgb(235, 233, 233);
+}
+.main .container1{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    padding: 50px 0px;
+    box-sizing: border-box;
+}
+.main .container1 .box1{
+    width: 30%;
+    height: 400px;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(238, 22, 22);
+}
+.main .container1 .box1 p{
+    padding: 30px 0px;
+}
+.main .container1 .box1 button{
+    background-color: rgba(255, 255, 255, 0.253);
+    border-radius: 20px;
+    padding: 10px 30px;
+    border: white;
+    margin-left: 29%;
+    color: white;
+    font-size: 17px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.main .container1 .box1 button:hover{
+    background-color: white;
+    color: red;
+}
+.main  .container1 .box2{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.main  .container1 .box2 .boxa{
+    width: 30%;
+    height: 340px;
+    margin-top: 25px;
+    background-color: white;
+    transition: 0.3s;
+    box-shadow: 1px 1px 1px 1px rgba(105, 105, 105, 0.288);
+}
+.main .container1 .box2 .boxa .img{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .container1 .box2 .boxa .img i{
+    font-size: 30px;
+    color: red;
+    background-color: rgba(255, 192, 203, 0.596);
+    padding: 15px;
+    border-radius: 50%;
+}
+.main .container1 .box2 .boxa .text{
+    width: 100%;
+    height: 65%;
+}
+.main .container1 .box2 .boxa .text h1{
+    font-size: 25px;
+    font-weight: 200;
+    text-align: center;
+    padding: 15px;
+}
+.main .container1 .box2  .boxa .text h3{
+    font-size: 17px;
+    color: rgb(77, 76, 76);
+    text-align: center;
+    padding: 13px;
+}
+.main .container1 .box2 .boxa:hover{
+    padding: 10px;
+}
+.container2{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/800px-Pizza-3007395.jpg');
+}
+.container2 .data{
+    width: 20%;
+    height: 100px;
+    margin-top: 100px;
+    margin-top:150px;
+    background-color: rgba(255, 0, 0, 0.747);
+}
+.container2 .data h1{
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+.container2 .data h3{
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.781);
+    text-align: center;
+}
+.container3{
+    width: 100%;
+margin-top: 30PX;
+}
+.container3 h3{
+    text-align: center;
+    color: dimgrey;
+    font-weight: 300;
+}
+.container3 h1{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.849);
+    font-weight: 400;
+    margin-top: 15px;
+}
+.container3 span{
+    color: orangered;
+}
+.container3 .menu{
+    width: 100%;
+
+}
+.container3 .menu ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.container3 .menu ul li{
+    position: relative;
+}
+.container3 .menu ul li::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: dimgray;
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+}
+.container3 .menu ul li:hover::after{
+    background: darkgrey;
+}
+.container3 .menu .b::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: orangered;
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+}
+.container3 .menu ul li a{
+    display: block;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.849);
+    padding: 0px 8px;
+    padding-top: 15px;
+}
+.container3 .menu ul li a:hover{
+    color: orangered;
+}
+.container3 h4{
+    margin-top: 40px;
+    text-align: center;
+    color: dimgrey;
+    font-weight: 300;
+}
+.container3 .box-item{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: auto;
+}
+.container3 .box-item .box{
+    width: 30%;
+    height: 550px;
+}
+.container3 .box-item .box .img{
+    width: 100%;
+    height: 70%;
+}
+.container3 .box-item .box .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.container3 .box-item .box .text{
+    width: 100%;
+    height: 21.5%;
+}
+.container3 .box-item .box .text h1{
+    text-align: center;
+    font-weight: bold;
+}
+.container3 .box-item .box .text h4{
+    color: rgb(112, 112, 112);
+    margin-top: 10px;
+}
+.container3 .box-item .box .text h2{
+    color: orangered;
+    margin-top: 10px;
+    text-align: center;
+}
+.container4{
+    width: 100%;
+    background-color: rgb(235, 233, 233);
+}
+.container4 .box{
+    width: 60%;
+    margin: auto;
+    padding-top: 60px;
+}
+.container4 .box h4{
+    text-align: center;
+    color: rgb(121, 120, 120);
+}
+.container4 .box h1{
+    margin-top: 20px;
+    text-align: center;
+}
+.container4 .box span{
+    color: orangered;
+}
+.container4 .box .cus{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+}
+.container4 .box .cus .text{
+    width: 80%;
+    height: 400px;
+    position: relative;
+}
+.container4 .box .cus .text::after{
+    content: '';
+    height: 70%;
+    width: 10px;
+    background: skyblue;
+    position: absolute;
+    left: 10;
+    top: 10;
+    margin-top: 50px;
+}
+.container4 .box .cus .text p{
+    font-size: 20px;
+    font-weight: 400;
+    padding: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+.container4 .box .cus .text h2{
+    font-size: 22px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 10px;
+}
+.container4 .box .cus .text h3{
+    color: rgba(0, 0, 0, 0.726);
+    font-size: 15px;
+    position: absolute;
+    margin-top: 180px;
+    padding: 20px;
+    margin-left: 10px;
+    box-sizing: border-box;
+}
+.container4 .box .cus .text h4{
+    position: absolute;
+    padding: 20px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    margin-top: 220px;
+}
+.container4 .box .cus .text h5{
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 510px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.container4 .box .cus .pic{
+    width: 30%;
+    height: 400px;
+}
+.container4 .box .cus .pic img{
+    width: 90%;
+    margin-top: 20%;
+    height: 70%;
+    border: 4px solid white;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.container5{
+    width: 100%;
+    height: 690px;  
+}
+.container5 .c{
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+}
+.container5 .c a{
+    text-decoration: none;
+}
+.container5 .event{
+    width: 100%;
+}
+.container5 .event h3{
+    text-align: center;
+    margin-top: 30px;
+    color: rgba(0, 0, 0, 0.712);
+}
+.container5 .event h2{
+    text-align: center;
+    margin-top: 20px;
+}
+.container5 .event span{
+    color: orangered;
+}
+.container5 .event .img {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.container5 .event .img .box{
+    margin-top: 40px;
+    width: 33.20%;
+    background-color: pink;
+    height: 500px;
+    position: relative;
+}
+.container5 .event .img .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container5 .event .img .box .bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.582);
+}
+.container5 .event .img .box h1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    margin-top: 310px;
+    margin-left: 10px;
+}
+.container5 .event .img .box h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 350px;
+    margin-left: 10px;
+    color: white;
+}
+.container5 .event .img .box span{
+    color: red;
+    font-weight: 900;
+    border-bottom: 2px solid red;
+}
+.container5 .event .img .box h4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 410px;
+    margin-left: 10px;
+    color: white;
+}
+.container6{
+    width: 100%;
+    height: 840px;
+    background-color: rgb(235, 233, 233);
+}
+.container6 .chef{
+    width: 100%;
+    text-align: center;
+}
+.container6 .chef h3{
+    color: rgba(0, 0, 0, 0.527);
+    padding-top: 30px;
+}
+.container6 .chef h1{
+    color: rgba(0, 0, 0, 0.932);
+    padding: 20px;
+    font-size: 40px;
+}
+.container6 .chef span{
+    color: orangered;
+}
+.container6 .box{
+    width: 80%;
+    margin: auto;
+    height: 660px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container6 .box .chef-img{
+    width: 30%;
+    height: 620px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+.container6 .box .chef-img:hover{
+    transform: scale(1.1);
+
+}
+.container6 .box .chef-img .img{
+    width: 100%;
+    height: 70%;
+    
+}
+.container6 .box .chef-img .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.container6 .box .chef-img .text{
+    width: 100%;
+    height: 30%;
+}
+.container6 .box .chef-img .text h1{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 18px;
+}
+.container6 .box .chef-img .text h4{
+    text-align: center;
+    padding-top: 10px;
+    color: rgba(0, 0, 0, 0.349);
+}
+.container6 .box .chef-img .text h2{
+    font-size: 16px;
+    padding: 15px;
+    color: rgba(0, 0, 0, 0.555);
+}
+.container7{
+    width: 100%;
+    background-color: white;
+    height: 800px;
+}
+.container7 h4{
+    text-align: center;
+    padding-top: 50px;
+    color: rgba(0, 0, 0, 0.432);
+}
+.container7 h1{
+    text-align: center;
+    padding-top: 30px;
+}
+.container7 span{
+    color: orangered;
+}
+.container7 .book{
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    background-color: rgba(199, 199, 199, 0.26);
+}
+.container7 .book .img{
+    width: 30%;
+    height: 550px;
+}
+.container7 .book .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container7 .book .booking{
+    width: 70%;
+    height: 550px;
+}
+.container7 .book .booking .login{
+    width: 90%;
+    height: 75%;
+    margin: auto;
+    margin-top: 9%;
+}
+.container7 .book .booking .login .f1{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.container7 .book .booking .login .f1 input{
+    width: 30%;
+    height: 40px;
+    font-size: 17px;
+}
+.container7 .book .booking .login .f2{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+.container7 .book .booking .login .f2 input{
+    width: 30%;
+    height: 40px;
+    font-size: 17px;
+}
+.container7 .book .booking .login .f3{
+    width: 100%;
+    height: 100px;
+}
+.container7 .book .booking .login .f3 textarea{
+    font-size: 17px;
+    width: 97%;
+    margin-left: 1.5%;
+}
+.container7 .book .booking .login .f4{
+    width: 100%;
+    margin-top: 14.5%;
+    margin-left: 42%;
+}
+.container7 .book .booking .login .f4 h1{
+    width: 160px;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 17px;
+    background-color: red;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.container7 .book .booking .login .f4 h1:hover{
+    color: black;
+}
+.container8{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.089);
+    height: 520px;
+}
+.container8 .text{
+    width: 100%;
+    text-align: center;
+}
+.container8 .text h4{
+    padding-top: 30px;
+    font-size: 17px;
+    color: rgba(105, 105, 105, 0.685);
+}
+.container8 .text h1{
+    padding-top: 20px;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container8 .text span{
+    color: orangered;
+}
+.container8 .img{
+    width: 85%;
+    margin: auto;
+    margin-top: 35px;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container8 .img .box{
+    width: 17%;
+    height: 80%;
+}
+.container8 .img .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.container8 .img .box img:hover{
+    transform: scale(1.15);
+    border:8px solid red;
+}
+.container8 .change{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.container8 .change a{
+    text-decoration: none;
+    color: red;
+}
+.container9 {
+    width: 100%;
+    margin-bottom: 60px;
+}
+.container9 .text{
+    width: 100%;
+    text-align: center;
+}
+.container9 .text p{
+    padding-top: 35px;
+    color: rgba(105, 105, 105, 0.767);
+}
+.container9 .text h1{
+    font-size: 40px;
+    padding: 30px;
+}
+.container9 .text span{
+    color: orangered;
+}
+.container9 .map{
+    width: 75%;
+    height: 500px;
+    margin: auto;
+}
+.container9 .map iframe{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container9 .contact{
+    width: 78%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.container9 .contact .box1{
+    width: 48.5%;
+    background-color: rgb(218, 216, 216);
+    display: flex;
+    margin-bottom: 20px;
+}
+.container9 .contact .box .logo{
+    width: 20%;
+}
+.container9 .contact .box1 .logo i{
+    font-size: 50px;
+    padding: 22px;
+    margin-left: 20px;
+}
+.container9 .contact .box1 .text1{
+    width: 80%;
+    
+}
+.container9 .contact .box1 .text1 h1{
+    color: rgb(63, 63, 63);
+    padding-top: 10px;
+    margin-left: 10px;
+}
+.container9 .contact .box1 .text1 p{
+    padding: 10px;
+    margin-left: 10px;
+}
+.container9 .message{
+    width: 77%;
+    background-color: white;
+    box-shadow: 1px 1px 3px 0;
+    margin: auto;
+}
+.container9 .message .boxa{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.container9 .message .boxa input{
+    margin-top: 20px;
+    width: 48%;
+    height: 50px;
+}
+.container9 .message .boxb{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.container9 .message .boxb input{
+    margin-top: 20px;
+    width: 98%;
+    height: 50px;
+} .container9 .message .boxc{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.container9 .message .boxc textarea{
+    margin-top: 20px;
+    width: 98%;
+    height: 80px;
+}
+.container9 .message .chat{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.container9 .message .chat h1{
+    margin-top: 25px;
+    width: 15.2%;
+    background-color: rgb(224, 3, 3);
+    font-size: 20px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    padding: 8px 15px;
+    margin-bottom: 25px;
+}
+.footer{
+    width: 100%;
+    background-color: black;
+}
+.footer .box{
+    width: 78%;
+    margin: auto;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 5px;
+    border-bottom: 2px solid white;
+}
+.footer .box .item{
+    width: 24%;
+}
+.footer .box .item h1{
+    font-size: 25px;
+    color: white;
+}
+.footer .box .item h3{
+    padding: 8px 25px;
+    font-size: 17px;
+    color: rgb(165, 163, 163);
+}
+.footer .box .item h4{
+    padding: 8px 10px;
+    font-size: 17px;
+    color: rgb(165, 163, 163);
+    margin-top: 10px;
+}
+.footer .box .item h4 span{
+    margin-top: 5px;
+    font-size: 18px;
+    border: 2px solid  rgb(165, 163, 163);
+    padding: 8px 10px;
+    border-radius: 49%;
+}
+.footer .copy{
+    margin: auto;
+    width: 78%;
+    text-align: center;
+}
+.footer .copy h2{
+    padding-top: 30px;
+    padding-bottom: 15px;
+    color: white;
+    font-weight: 300;
+}
+.footer .copy h3{
+    font-size: 18px;
+    font-weight: 100;
+    color: rgb(165, 163, 163);
+    padding-bottom: 40px;
+}

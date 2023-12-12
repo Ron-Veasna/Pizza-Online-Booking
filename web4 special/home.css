@@ -24,6 +24,7 @@
     border-radius: 50%;
     animation: za 8s linear infinite;
 }
+
 @keyframes za {
     from{
         transform: rotate(0deg);
@@ -92,7 +93,7 @@
     border-bottom: 2px solid darkgray;
     text-transform: uppercase;
 }
-.bar .menu ul li a:hover{
+.bar .menu ul li a:hover, .bar .menu ul li a .btn .active{
     color: orangered;
     border-bottom: 2px solid blue;
 }
@@ -470,7 +471,7 @@ margin-top: 30PX;
 .container3 .box-item .box .img img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     cursor: pointer;
 }
 .container3 .box-item .box .text{

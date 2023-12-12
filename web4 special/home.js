@@ -1,3 +1,4 @@
+
 function buy(){
     alert("Sorry your can not buy yet, Becuz this Web just for Testing");
 }
@@ -12,4 +13,7 @@ function table(){
 }
 function chat(){
     alert("Send Tv na yii, ot mean back-end te yul?");
+}
+function joch(){
+
 }

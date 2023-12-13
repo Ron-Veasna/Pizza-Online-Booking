@@ -306,7 +306,6 @@
     margin-left: 29%;
     color: white;
     font-size: 17px;
-    transition: 0.5s;
     cursor: pointer;
 }
 .main .container1 .box1 button:hover{
@@ -323,7 +322,7 @@
     height: 340px;
     margin-top: 25px;
     background-color: white;
-    transition: 0.3s;
+
     box-shadow: 1px 1px 1px 1px rgba(105, 105, 105, 0.288);
 }
 .main .container1 .box2 .boxa .img{
@@ -1053,4 +1052,601 @@ margin-top: 30PX;
     font-weight: 100;
     color: rgb(165, 163, 163);
     padding-bottom: 40px;
+}
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	
+}
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	
+}
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px){ 
+	
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+	.bar{
+        margin-top: 0px;
+    }
+    .bar .logo{
+        margin-top: 3px;
+        margin-left: 20px;
+    }
+    .bar .logo img{
+        width: 50px;
+        border-radius: 50%;
+    }
+    
+    @keyframes za {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+      }
+    .bar .logo img:hover{
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    .bar .logo h1{
+        margin-left: 10px;
+        font-size: 16px;
+        width: 80px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .bar .logo span::after{
+        height: 1px;
+        bottom: -3px;
+    }
+    .bar .logo:hover span::after{
+        width: 100%;
+    }
+    .bar .logo h1::after{
+        height: 1px;
+        bottom: 3px;
+    }
+    .bar .logo h1:hover::after{
+        width: 80%;
+    }
+    .bar .menu{
+        margin-top: 13px;
+        margin-right: 0px;
+    }
+    .bar .menu ul li{
+        margin: 0px 0px;
+    }
+    .bar .menu ul li a{
+        font-size: 13px;
+        border-bottom: 1px solid darkgray;
+    }
+    .bar .menu ul li a:hover, .bar .menu ul li a .btn .active{
+        border-bottom: 1px solid blue;
+    }
+    .bar .menu ul li::after{
+        height: 1px;
+        bottom: -5px;
+    }
+    .body{
+        flex-wrap: wrap;
+        margin-top: 10px;
+        height: 460px;
+        margin-bottom: 30px;
+    }
+    .body .text{
+        width: 100%;
+        height: 50%;
+        margin-top: 5px;
+    }
+    .body .text h1{
+        padding: 5px;
+        font-size:25px;
+    }
+    .body .text p{
+        line-height: 20px;
+        font-size: 12px;
+    }
+    .body .img{margin-top: 30px;
+        width: 100%;
+    }
+    .body .img img{
+        margin-top: 0px;
+        width: 80%;
+        margin-left: 10%;
+    }
+    @keyframes pizza{
+        0%{
+            transform: translateY(0px);
+        }
+        50%{
+            transform: translateY(50px);
+        }
+        100%{
+            transform: translateY(0px);
+        }
+    }
+    .bttn button{
+        width: 100px;
+        margin: 7px 10px;
+    }
+    .bttn button h3{
+        margin-top: 5px;
+        font-size: 10px;
+    }
+    .thank{
+        margin-top: 10px;
+        font-size: 10px;
+    }
+    .thank h1{
+        width: 80%;
+        margin-left: 10%;
+        font-size: 20px !important;
+        border-bottom: 2px solid orangered;
+    }
+    .detial{
+        height: 90px;
+        margin-top: 110px;
+    }
+    .detial h2{
+        font-size: 15px;
+        padding: 5px;
+    }
+    .detial h1{
+        font-size: 20px;
+    }
+    .container{
+        width: 100%;
+    }
+    .container .img{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .container .img .booking{
+        top: 55%;
+        padding: 5px 15px;
+    }
+    .container .img .booking h1{
+        font-size: 20px;
+    }
+    .container .text {
+        width: 100%;
+        padding: 5px 40px;
+    }
+    .container .text h1{
+        text-align: center;
+        font-size: 25px;
+        padding: 10px 10px;
+    }
+    .container .text h2{
+        font-size: 13px;
+    }
+    .container .text h3 {
+        padding-top: 10px;
+       font-size: 15px;
+    }
+    .container .vdo{
+        height:350px;
+        padding: 5px;
+    }
+    .main .container1{
+        width: 96%;
+        padding: 15px 0px;
+    }
+    .main .container1 .box1{
+        height: 355px;
+        padding: 5px 5px;
+    }
+    .main .container1 .box1 h1{
+        font-size: 15px;
+    }
+    .main .container1 .box1 p{
+        padding: 5px 0px;
+        font-size: 10px;
+    }
+    .main .container1 .box1 button{
+        padding: 5px 10px;
+        font-size: 10px;
+        margin-left: 5%;
+        font-size: 15px !important;
+        transition: 0.0s;
+    }
+    .main  .container1 .box2 .boxa{
+        width: 30%;
+        height: 240px;
+        margin-top: 50px;
+    }
+    .main .container1 .box2 .boxa .img i{
+        font-size: 20px;
+        height: 30px;
+        color: red;
+        background-color: rgba(255, 192, 203, 0.596);
+        padding: 5px;
+        border-radius: 50%;
+    }
+    .main .container1 .box2 .boxa .text{
+        width: 100%;
+        height: 65%;
+    }
+    .main .container1 .box2 .boxa .text h1{
+        font-size: 10px;
+        padding: 5px;
+    }
+    .main .container1 .box2  .boxa .text h3{
+        font-size: 10px;
+        padding: 3px;
+    }
+    .container2{
+        width: 100%;
+        height: 250px;
+        background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/800px-Pizza-3007395.jpg');
+    }
+    .container2 .data{
+        width: 20%;
+        height: 58px;
+        margin-top: 100px;
+    }
+    .container2 .data h1{
+        font-size: 20px;
+    }
+    .container2 .data h3{
+        font-size: 14px;
+    }
+    .container3{
+    margin-top: 10px;
+    }
+    .container3 h3{
+        font-size: 20px;
+    }
+    .container3 h1{
+        font-size: 18px;
+        margin-top: 8px;
+    }
+    .container3 .menu ul{
+        gap: 18px;
+    }
+    .container3 .menu ul li a{
+        font-size: 14px;
+        padding: 0px 3px;
+        padding-top: 5px;
+    }
+    .container3 h4{
+        margin-top: 24px;
+        font-size: 19px;
+    }
+    .container3 .box-item{
+        width: 95%;
+    }
+    .container3 .box-item .box{
+        width: 50%;
+        height: 350px;
+    }
+    .container3 .box-item .box .img{
+        height: 40%;
+    }
+    .container4 .box{
+        width: 95%;
+        padding-top: 15px;
+    }
+    .container4 .box h4{
+        font-size: 20px;
+    }
+    .container4 .box h1{
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    .container4 .box .cus{
+        margin-top: 10px;
+    }
+    .container4 .box .cus .text{
+        width: 80%;
+        height: 200px;
+    }
+    .container4 .box .cus .text::after{
+        height: 80%;
+        width: 7px;
+        top: 10;
+        margin-top: 10px;
+    }
+    .container4 .box .cus .text p{
+        font-size: 10px;
+        font-weight: 400;
+        padding: 5px;
+        margin-top: 10px;
+        margin-left: 7px;
+    }
+    .container4 .box .cus .text h2{
+        font-size: 10px;
+        padding: 10px;
+        margin-top: 90px;
+        margin-left: 10px;
+    }
+    .container4 .box .cus .text h3{
+        font-size: 12px;
+        margin-top: 110px;
+    }
+    .container4 .box .cus .text h4{
+        padding: 15px;
+        margin-top: 140px;
+    }
+    .container4 .box .cus .pic{
+        width: 40%;
+        height: 200px;
+    }
+    .container5{
+        height: 390px;  
+    }
+    .container5 .c{
+        margin-top: 10px;
+    }
+    .container5 .event h3{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .container5 .event h2{
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .container5 .event .img .box{
+        margin-top: 10px;
+        width: 33.20%;
+        background-color: pink;
+        height: 300px;
+    }
+    .container5 .event .img .box h1{
+        font-size: 15px;
+        margin-top: 210px;
+        margin-left: 10px;
+    }
+    .container5 .event .img .box h2 {
+        font-size: 10px;
+        margin-top: 230px;
+        margin-left: 5px;
+    }
+
+    .container5 .event .img .box h4 {
+        font-size: 5px;
+        margin-top: 260px;
+        margin-left: 5px;
+    } 
+    .c i{
+        font-size: 10px !important;
+    }
+    .container6{
+        height: 500px;
+    }
+    .container6 .chef h3{
+        font-size: 20px;
+        padding-top: 20px;
+    }
+    .container6 .chef h1{
+        padding: 5px;
+        font-size: 20px;
+    }
+    .container6 .box{
+        width: 100%;
+        height: 400px;
+        margin-top: 10px;
+    }
+    .container6 .box .chef-img{
+        height: 350px;
+    }
+    .container6 .box .chef-img .img{
+        width: 100%;
+        height: 50%;
+    }
+    .container6 .box .chef-img .text h1{
+        font-size: 10px;
+        padding-top: 5px;
+    }
+    .container6 .box .chef-img .text h4{
+        padding-top: 5px;
+        font-size: 10px;
+    }
+    .container6 .box .chef-img .text h2{
+        font-size: 10px;
+        padding: 5px;
+    }
+    .container7{
+        height: 710px;
+    }
+    .container7 h4{
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    .container7 h1{
+        font-size: 20px;
+        padding-top: 5px;
+    }
+    .container7 .book{
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .container7 .book .img{
+        width: 100%;
+        height: 350px;
+    }
+    .container7 .book .booking{
+        width: 100%;
+        height: 550px;
+    }
+    .container7 .book .booking .login{
+        width: 90%;
+        height: 75%;
+        margin-top: 4%;
+    }
+    .container7 .book .booking .login .f1{
+        width: 98%;
+        height: 35px;
+        margin-bottom: 10px;
+    }
+    .container7 .book .booking .login .f1 input{
+        width: 30%;
+        height: 40px;
+        font-size: 15px;
+    }
+    .container7 .book .booking .login .f2{
+        width: 98%;
+        height: 35px;
+        margin-bottom: 10px;
+    }
+    .container7 .book .booking .login .f2 input{
+        width: 30%;
+        height: 40px;
+        font-size: 15px;
+    }
+    .container7 .book .booking .login .f3{
+        width: 100%;
+        height: 50px;
+    }
+    .container7 .book .booking .login .f3 textarea{
+        font-size: 15px;
+        width: 96%;
+        height: 100px;
+    }
+    .container7 .book .booking .login .f4{
+        margin-top: 15%;
+        margin-left: 28%;
+    }
+    .container7 .book .booking .login .f4 h1{
+        padding-top: 15px;
+        font-size: 17px;
+    }
+    .container8{
+        height: 380px;
+    }
+    .container8 .text h4{
+        padding-top: 10px;
+        font-size: 15px;
+    }
+    .container8 .text h1{
+        padding-top: 5px;
+        font-size: 20px;
+    }
+    .container8 .img{
+        width: 100%;
+        margin-top: 10px;
+        height: 250px;
+    }
+    .container8 .img .box{
+        width: 17%;
+        height: 80%;
+    }
+    .container8 .img .box img:hover{
+        border:1px solid red;
+    }
+    .container8 .change{
+        margin-top: 5px;
+    }
+    .container8 .change a i{
+        font-size: 15px !important;
+    }
+    .container9 {
+        margin-bottom: 10px;
+    }
+    .container9 .text p{
+        padding-top: 15px;
+        margin-bottom: 0px;
+        font-size: 20px;
+    }
+    .container9 .text h1{
+        font-size: 20px;
+        padding: 5px;
+    }
+    .container9 .map{
+        margin-top: 10px;
+        width: 95%;
+        height: 300px;
+    }
+    .container9 .contact{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .container9 .contact .box1{
+        width: 95%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .container9 .contact .box .logo{
+        width: 20%;
+    }
+    .container9 .contact .box1 .logo i{
+        font-size: 20px;
+        padding: 22px;
+        margin-left: 20px;
+    }
+    .container9 .contact .box1 .text1{
+        width: 80%;
+    }
+    .container9 .contact .box1 .text1 h1{
+        font-size: 30px;
+        padding-top: 10px;
+        margin-left: 10px;
+    }
+    .container9 .contact .box1 .text1 p{
+        padding: 5px;
+        margin-left: 10px;
+    }
+    .container9 .message{
+        display: none;
+    }
+    .footer .box{
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 2px solid white;
+    }
+    .footer .box .item{
+        width: 24%;
+    }
+    .footer .box .item h1{
+        font-size: 12px;
+        text-align: center;
+    }
+    .footer .box .item h3{
+        padding: 8px 25px;
+        font-size: 10px;
+        color: rgb(165, 163, 163);
+    }
+    .footer .box .item h4{
+        padding: 8px 10px;
+        font-size: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    .footer .box .item h4 span{
+        margin-top: 5px;
+        font-size: 10px;
+        padding: 5px 8px;
+        border-radius: 49%;
+    }
+    .footer .copy{
+        width: 89%;
+    }
+    .footer .copy h2{
+        padding-top: 12px;
+        padding-bottom: 10px;
+        font-size: 22px;
+    }
+    .footer .copy h3{
+        font-size: 15px;
+        font-weight: 100;
+        color: rgb(165, 163, 163);
+        padding-bottom: 22px;
+    }
+
+
 }
